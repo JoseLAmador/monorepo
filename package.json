@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js"
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
+    "bootstrap": "lerna bootstrap --use-workspaces"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
