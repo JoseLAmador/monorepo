@@ -4,7 +4,18 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js"
+  },
   "devDependencies": {
-    "lerna": "^3.15.0"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "lerna": "^3.15.0",
+    "webpack": "^4.36.1"
   }
 }
