@@ -1,0 +1,29 @@
+{
+  "name": "@asjosel/docs-site",
+  "version": "1.0.0",
+  "description": "Docs site",
+  "private": true,
+  "author": "JoseLAmador <josel.amador.s@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoseLAmador/monorepo.git",
+    "directory": "packages/docs-site"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@asjosel/core": "^1.2.0",
+    "autoprefixer": "^10.3.4",
+    "next": "^11.1.2",
+    "nextra": "^1.1.0",
+    "nextra-theme-docs": "^1.2.6",
+    "postcss": "^8.3.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^2.2.15"
+  }
+}
