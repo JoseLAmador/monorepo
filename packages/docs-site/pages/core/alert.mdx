@@ -1,11 +1,20 @@
-import Alert from '../../components/Alert'
-import Button from '../../components/Button'
+import { Alert, Button } from '@asjosel/core'
+
+import Callout from 'nextra-theme-docs/callout'
 
 # Alert
 
-Alert component.....
+<Callout>
+  Use `react` and `react-dom` to the latest version (≥ 16.8.0) to use this feature.
+</Callout>
 
-You can use it as:
+## Description
+
+Use it when you try to show....:
+
+```jsx
+<Alert message="Hello everyone!" />
+```
 
 ## Props
 
@@ -16,7 +25,7 @@ Use the `message` prop to send a custom message.
 
 ## Usage
 
-```markdown
+```jsx
 import { Alert, Button } from '@asjosel/core'
 
 <Alert />
@@ -25,8 +34,8 @@ import { Alert, Button } from '@asjosel/core'
 
 ```
 
-## Renders
+## Example
 
 <Alert />
 
-<Button />
+<Button>Hello world</Button>
