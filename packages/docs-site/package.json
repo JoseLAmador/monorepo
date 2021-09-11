@@ -5,6 +5,7 @@
   "private": true,
   "author": "JoseLAmador <josel.amador.s@gmail.com>",
   "license": "ISC",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/JoseLAmador/monorepo.git",
@@ -17,16 +18,20 @@
   },
   "dependencies": {
     "@asjosel/core": "^1.2.0",
-    "next": "^11.1.2",
+    "next": "^11.0.1",
     "nextra": "^1.1.0",
-    "nextra-theme-docs": "^1.2.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "nextra-theme-docs": "^1.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
     "postcss": "^8.3.6",
     "prettier": "^2.0.5",
     "tailwindcss": "^2.2.15"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }
