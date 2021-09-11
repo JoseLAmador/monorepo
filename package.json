@@ -1,6 +1,14 @@
 {
   "name": "@asjosel/monorepo",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "compile": "lerna run compile",
+    "clean": "lerna run --parallel clean"
+  },
   "devDependencies": {
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
