@@ -1,0 +1,9 @@
+# node
+node_modules
+
+# library
+build
+dist
+lib
+
+.DS_Store
