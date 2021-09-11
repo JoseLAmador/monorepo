@@ -1,7 +1,7 @@
 {
   "name": "@asjosel/docs-site",
   "version": "1.0.0",
-  "description": "Docs site",
+  "description": "Docs site & styles",
   "private": true,
   "author": "JoseLAmador <josel.amador.s@gmail.com>",
   "license": "ISC",
