@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Button = () => {
+type ButtonProps = {
+  children: React.ReactNode;
+}
+
+const Button: React.FC<ButtonProps> = ({ children }) => {
   return (
-    <button type="button">Example button</button>
+    <button type="button" className="py-4 px-5 text-lg bg-primary-500 font-bold">{children}</button>
   )
 }
 

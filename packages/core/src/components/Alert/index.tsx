@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Alert = () => {
+interface AlertProps {
+  message?: string,
+}
+
+const Alert: React.FC<AlertProps> = ({ message }) => {
   return (
-    <div role="alert">This is an alert!</div>
+    <div className="py-5 px-8" role="alert">{message ? message : 'This is an alert!'}</div>
   )
 }
 
