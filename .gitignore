@@ -10,3 +10,5 @@ lib
 
 # docs
 .next
+
+yarn-error.log
