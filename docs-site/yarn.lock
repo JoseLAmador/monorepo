@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@asjosel/core/-/core-1.2.0.tgz#951c4c01ffb03c45e317d81858e62f4af568a164"
   integrity sha512-hLyVagyt6BCQqrJ8qpZtIy82Kh7mSMQBIX2sdIkHJxoHjfciTfPOTm0S+FIbApS90IdO/l5zyUSVXPvFdI452A==
 
+"@asjosel/iconography@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@asjosel/iconography/-/iconography-1.0.2.tgz#30b3ffb704ca93d2ae5b4e6edf412735a7938a3e"
+  integrity sha512-ApE5PPio82gmK1DXR+vnYyhNjF8n8mTarU6uWvL8b/pkTzKFXSCWSVwbNb2gy995+ZSEbxyDV2Z2cvWJjnc89g==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
