@@ -31,9 +31,7 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
-    "@asjosel/core": "1.2.0",
-    "@asjosel/tabs": "1.0.1"
+    "react-dom": ">=16.8.0"
   },
   "prettier": {
     "semi": false,
