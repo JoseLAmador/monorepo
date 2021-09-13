@@ -8,7 +8,7 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "compile": "lerna run compile",
     "clean": "lerna run --parallel clean",
-    "docs:dev": "cd docs-site && yarn && yarn dev"
+    "docs:dev": "lerna run docs:dev"
   },
   "devDependencies": {
     "@types/react": "^17.0.20",
