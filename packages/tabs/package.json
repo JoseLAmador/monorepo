@@ -1,0 +1,37 @@
+{
+  "name": "@asjosel/tabs",
+  "version": "1.0.0",
+  "description": "Tabs component",
+  "author": "JoseLAmador",
+  "homepage": "https://github.com/JoseLAmador/monorepo#readme",
+  "license": "ISC",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "esnext": "lib/esnext/index.js",
+  "typings": "lib/esm/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseLAmador/monorepo.git",
+    "directory": "packages/tabs"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/* && rm -rf lib/*",
+    "compile": "npm run clean && npm run compile:esm && npm run compile:cjs && npm run compile:esnext",
+    "compile:esm": "tsc -p ./src",
+    "compile:cjs": "tsc -p ./src -m commonjs --outDir lib/cjs",
+    "compile:esnext": "tsc -p ./src -t esnext --outDir lib/esnext"
+  },
+  "bugs": {
+    "url": "https://github.com/JoseLAmador/monorepo/issues"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.4.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}
