@@ -4,6 +4,14 @@ const withNextra = require('nextra')({
   unstable_staticImage: true,
 });
 
-const withTranspile = require('next-transpile-modules')(['@asjosel/core', '@asjosel/tabs'])
+const withTm = require('next-transpile-modules')(['@asjosel/core', '@asjosel/tabs'])
 
-module.exports = withNextra(withTranspile())
+module.exports = withNextra(withTm({
+  webpack: (config, options) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@asjosel/core': require.resolve('@asjosel/core'),
+      '@asjosel/tabs': require.resolve('@asjosel/tabs'),
+    }
+  }
+}))
