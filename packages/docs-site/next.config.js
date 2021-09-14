@@ -2,17 +2,21 @@ const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.js',
   unstable_staticImage: true,
+  webpack: function (config, { defaultLoaders }) {
+    const resolvedBaseUrl = path.resolve(config.context, "../../");
+    config.module.rules = [
+      ...config.module.rules,
+      {
+        test: /\.(tsx|ts|js|mjs|jsx)$/,
+        include: [resolvedBaseUrl],
+        use: defaultLoaders.babel,
+        exclude: (excludePath) => {
+          return /node_modules/.test(excludePath);
+        },
+      },
+    ];
+    return config;
+  },
 });
 
-const withTm = require('next-transpile-modules')(['@asjosel/core', '@asjosel/tabs'])
-
-module.exports = withNextra(withTm({
-  webpack: (config, options) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@asjosel/core': require.resolve('@asjosel/core'),
-      '@asjosel/tabs': require.resolve('@asjosel/tabs'),
-    }
-    return config
-  }
-}))
+module.exports = withNextra()
