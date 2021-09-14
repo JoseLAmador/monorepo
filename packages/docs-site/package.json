@@ -17,8 +17,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@asjosel/core": "1.2.0",
-    "@asjosel/tabs": "1.0.1",
     "next": "^11.0.1",
     "next-transpile-modules": "^8.0.0",
     "nextra": "^1.1.0",
@@ -27,10 +25,6 @@
     "postcss": "^8.3.6",
     "prettier": "^2.0.5",
     "tailwindcss": "^2.2.15"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
   },
   "prettier": {
     "semi": false,
