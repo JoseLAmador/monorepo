@@ -13,5 +13,6 @@ module.exports = withNextra(withTm({
       '@asjosel/core': require.resolve('@asjosel/core'),
       '@asjosel/tabs': require.resolve('@asjosel/tabs'),
     }
+    return config
   }
 }))
