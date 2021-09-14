@@ -6,4 +6,4 @@ const withNextra = require('nextra')({
 
 const withTranspile = require('next-transpile-modules')(['@asjosel/core', '@asjosel/tabs'])
 
-module.exports = withTranspile(withNextra())
+module.exports = withNextra(withTranspile())
